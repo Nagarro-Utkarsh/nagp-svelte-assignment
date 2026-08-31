@@ -1,0 +1,70 @@
+@import '../../global/library.css';
+
+.backdrop {
+  max-width: min(28rem, calc(100vw - 2rem));
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: visible;
+}
+
+.backdrop::backdrop {
+  background: rgb(16 24 40 / 45%);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  color: var(--rf-text, #1f2328);
+  background: var(--rf-surface, #ffffff);
+  border-radius: var(--rf-radius-lg, 0.75rem);
+  box-shadow: 0 12px 32px rgb(16 24 40 / 22%);
+}
+
+.heading {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.body {
+  font-size: 0.875rem;
+  color: var(--rf-muted, #6b7280);
+}
+
+.foot {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.cancel,
+.confirm {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: var(--rf-radius-lg, 0.75rem);
+}
+
+.cancel {
+  color: var(--rf-text, #1f2328);
+  border: 1px solid var(--rf-border, #e4e6ea);
+}
+
+.cancel:hover {
+  background: var(--rf-muted-surface, #f3f4f6);
+}
+
+.confirm {
+  color: var(--rf-on-accent, #ffffff);
+  background: var(--rf-accent, #d9480f);
+}
+
+.panel--danger .confirm {
+  background: var(--rf-danger, #e03131);
+}
+
+.confirm:hover {
+  filter: brightness(0.94);
+}

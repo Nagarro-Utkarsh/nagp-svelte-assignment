@@ -1,0 +1,108 @@
+@import '../../global/library.css';
+
+.bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.icon {
+  position: absolute;
+  left: 0.75rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: var(--rf-muted, #6b7280);
+  stroke-width: 2;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  padding: 0.625rem 2.25rem 0.625rem 2.5rem;
+  color: var(--rf-text, #1f2328);
+  background: var(--rf-surface, #ffffff);
+  border: 1px solid var(--rf-border, #e4e6ea);
+  border-radius: var(--rf-radius-lg, 0.75rem);
+}
+
+.input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.input::placeholder {
+  color: var(--rf-muted, #6b7280);
+}
+
+.input:focus {
+  border-color: var(--rf-accent, #d9480f);
+}
+
+.clear {
+  position: absolute;
+  right: 0.5rem;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--rf-muted, #6b7280);
+  border-radius: 999px;
+}
+
+.clear svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.clear:hover {
+  color: var(--rf-text, #1f2328);
+  background: var(--rf-muted-surface, #f3f4f6);
+}
+
+.submit {
+  padding: 0.625rem 1.125rem;
+  font-weight: 600;
+  color: var(--rf-on-accent, #ffffff);
+  background: var(--rf-accent, #d9480f);
+  border-radius: var(--rf-radius-lg, 0.75rem);
+  white-space: nowrap;
+}
+
+.submit:hover {
+  filter: brightness(0.94);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.625rem;
+}
+
+:host(:not(:has([slot='filters']))) .filters {
+  display: none;
+}
+
+@media (max-width: 30rem) {
+  .bar {
+    flex-wrap: wrap;
+  }
+
+  .submit {
+    flex: 1;
+  }
+}
