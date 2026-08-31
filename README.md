@@ -5,11 +5,16 @@ A recipe discovery and weekly meal-planning app built with **Svelte 5 / SvelteKi
 
 ## Deliverables
 
-| | |
+| Deliverable | Link |
 | --- | --- |
-| Deployed application | _TODO: Vercel URL_ |
+| SvelteKit application — source | [`recipe-planner-web-app/`](recipe-planner-web-app) |
+| StencilJS component library — source | [`recipe-ui/`](recipe-ui) |
 | npm package | https://www.npmjs.com/package/@utkarsh-mahajan/recipe-ui |
+| Deployed application | https://recipe-planner-web-app.vercel.app |
 | GitHub repository | https://github.com/Nagarro-Utkarsh/nagp-svelte-assignment |
+
+This README covers [Setup](#setup), [Starting the development server](#starting-the-development-server)
+and [Assumptions](#assumptions).
 
 ```
 .
