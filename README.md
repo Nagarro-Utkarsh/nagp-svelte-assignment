@@ -9,7 +9,7 @@ A recipe discovery and weekly meal-planning app built with **Svelte 5 / SvelteKi
 | --- | --- |
 | Deployed application | _TODO: Vercel URL_ |
 | npm package | https://www.npmjs.com/package/@utkarsh-mahajan/recipe-ui |
-| GitHub repository | _TODO: GitHub URL_ |
+| GitHub repository | https://github.com/Nagarro-Utkarsh/nagp-svelte-assignment |
 
 ```
 .
@@ -175,5 +175,6 @@ symlink — that is what proves the app consumes the published package.
 ## Deploying
 
 Import the repository in Vercel with **root directory `recipe-planner-web-app`**, and add
-`SPOONACULAR_API_KEY` as an environment variable. `adapter-auto` handles the rest. Without the variable
-the deploy still works — it just serves the fallback snapshot.
+`SPOONACULAR_API_KEY` as an environment variable. The app uses `@sveltejs/adapter-vercel`, set in
+`vite.config.ts`, so there is nothing else to configure. Without the variable the deploy still works —
+it just serves the fallback snapshot.
