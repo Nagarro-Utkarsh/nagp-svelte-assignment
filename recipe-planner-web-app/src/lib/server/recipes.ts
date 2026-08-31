@@ -24,7 +24,7 @@ const FILTER_FIELDS: Record<FilterType, FilterField> = {
 	diet: 'diets'
 };
 
-let cache: RawRecipeDetail[] = [];
+let cache: Promise<RawRecipeDetail[]> | null = null;
 
 async function fetchRecipes(): Promise<RawRecipeDetail[]> {
 	const apiKey = env.SPOONACULAR_API_KEY;
@@ -44,30 +44,30 @@ async function fetchRecipes(): Promise<RawRecipeDetail[]> {
 		apiKey
 	});
 
+	const response = await fetch(`${ENDPOINT}?${params}`);
+
+	if (!response.ok) throw new Error(`Spoonacular responded with ${response.status}`);
+
+	const body = (await response.json()) as RawSearchResponse;
+	const results = (body.results ?? []) as RawRecipeDetail[];
+
+	if (!results.length) throw new Error('Spoonacular returned no results');
+
+	return results;
+}
+
+async function getAllRecipes(): Promise<RawRecipeDetail[]> {
+	cache ??= fetchRecipes();
+
 	try {
-		const response = await fetch(`${ENDPOINT}?${params}`);
-
-		if (!response.ok) throw new Error(`Spoonacular responded with ${response.status}`);
-
-		const body = (await response.json()) as RawSearchResponse;
-		const results = (body.results ?? []) as RawRecipeDetail[];
-
-		if (!results.length) throw new Error('Spoonacular returned no results');
-
-		return results;
+		return await cache;
 	} catch (cause) {
+		cache = null;
+
 		console.warn(`${cause} — serving the bundled fallback recipes.`);
 
 		return FALLBACK_RECIPES;
 	}
-}
-
-async function getAllRecipes(): Promise<RawRecipeDetail[]> {
-	if (!cache.length) {
-		cache = await fetchRecipes();
-	}
-
-	return cache;
 }
 
 function titleCase(value: string): string {
