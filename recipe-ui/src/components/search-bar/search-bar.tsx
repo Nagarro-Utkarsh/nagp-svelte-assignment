@@ -1,23 +1,25 @@
-import { Component, Event, EventEmitter, Host, Prop, h } from '@stencil/core';
-import type { SearchInputDetail, SearchSubmitDetail } from './search-bar.types';
+import { Component, Event, EventEmitter, Host, Prop, h } from "@stencil/core";
+import type { SearchInputDetail, SearchSubmitDetail } from "./search-bar.types";
 
 @Component({
-  tag: 'search-bar',
-  styleUrl: 'search-bar.css',
+  tag: "search-bar",
+  styleUrl: "search-bar.css",
   shadow: true,
 })
 export class SearchBar {
-  @Prop() value = '';
+  @Prop() value = "";
 
-  @Prop() placeholder = 'Search recipes…';
+  @Prop() placeholder = "Search recipes…";
 
-  @Prop() label = 'Search recipes';
+  @Prop() label = "Search recipes";
 
-  @Event({ eventName: 'search-input' }) searchInput!: EventEmitter<SearchInputDetail>;
+  @Event({ eventName: "search-input" })
+  searchInput!: EventEmitter<SearchInputDetail>;
 
-  @Event({ eventName: 'search-submit' }) searchSubmit!: EventEmitter<SearchSubmitDetail>;
+  @Event({ eventName: "search-submit" })
+  searchSubmit!: EventEmitter<SearchSubmitDetail>;
 
-  @Event({ eventName: 'search-clear' }) searchClear!: EventEmitter<void>;
+  @Event({ eventName: "search-clear" }) searchClear!: EventEmitter<void>;
 
   private handleInput = (e: Event) => {
     this.searchInput.emit({ value: (e.target as HTMLInputElement).value });
@@ -41,7 +43,12 @@ export class SearchBar {
           </label>
 
           <span class="field">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
               <circle cx="11" cy="11" r="7" />
               <path d="m16.5 16.5 4 4" />
             </svg>
@@ -57,7 +64,12 @@ export class SearchBar {
             />
 
             {this.value ? (
-              <button type="button" class="clear" onClick={this.handleClear} aria-label="Clear search">
+              <button
+                type="button"
+                class="clear"
+                onClick={this.handleClear}
+                aria-label="Clear search"
+              >
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="m6 6 12 12M18 6 6 18" />
                 </svg>

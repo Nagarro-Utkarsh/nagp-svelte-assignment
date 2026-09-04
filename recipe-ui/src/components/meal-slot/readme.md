@@ -1,9 +1,6 @@
 # meal-slot
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,13 +11,11 @@
 | `isEmpty`                | `is-empty`   |             | `boolean` | `false`      |
 | `slotLabel` _(required)_ | `slot-label` |             | `string`  | `undefined`  |
 
-
 ## Events
 
 | Event      | Description | Type                         |
 | ---------- | ----------- | ---------------------------- |
 | `slot-add` |             | `CustomEvent<SlotAddDetail>` |
-
 
 ## Slots
 
@@ -28,7 +23,6 @@
 | ---- | ---------------- |
 |      | The default slot |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

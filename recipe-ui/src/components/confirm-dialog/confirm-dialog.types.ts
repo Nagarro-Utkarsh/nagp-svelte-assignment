@@ -1,1 +1,1 @@
-export type ConfirmDialogTone = 'default' | 'danger';
+export type ConfirmDialogTone = "default" | "danger";

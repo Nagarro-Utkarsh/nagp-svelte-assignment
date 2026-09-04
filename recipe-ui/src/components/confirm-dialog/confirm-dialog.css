@@ -1,4 +1,4 @@
-@import '../../global/library.css';
+@import "../../global/library.css";
 
 .backdrop {
   max-width: min(28rem, calc(100vw - 2rem));

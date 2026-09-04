@@ -1,9 +1,9 @@
-import { Component, Event, EventEmitter, Host, Prop, h } from '@stencil/core';
-import type { CardOpenDetail, FavoriteToggleDetail } from './recipe-card.types';
+import { Component, Event, EventEmitter, Host, Prop, h } from "@stencil/core";
+import type { CardOpenDetail, FavoriteToggleDetail } from "./recipe-card.types";
 
 @Component({
-  tag: 'recipe-card',
-  styleUrl: 'recipe-card.css',
+  tag: "recipe-card",
+  styleUrl: "recipe-card.css",
   shadow: true,
 })
 export class RecipeCard {
@@ -21,9 +21,10 @@ export class RecipeCard {
 
   @Prop() isOwned = false;
 
-  @Event({ eventName: 'favorite-toggle' }) favoriteToggle!: EventEmitter<FavoriteToggleDetail>;
+  @Event({ eventName: "favorite-toggle" })
+  favoriteToggle!: EventEmitter<FavoriteToggleDetail>;
 
-  @Event({ eventName: 'card-open' }) cardOpen!: EventEmitter<CardOpenDetail>;
+  @Event({ eventName: "card-open" }) cardOpen!: EventEmitter<CardOpenDetail>;
 
   private handleFavorite = () => {
     this.favoriteToggle.emit({
@@ -60,18 +61,24 @@ export class RecipeCard {
               <span class="title">{this.name}</span>
 
               <span class="meta">
-                {this.category ? <span class="chip chip--category">{this.category}</span> : null}
-                {this.area ? <span class="chip chip--area">{this.area}</span> : null}
-                {this.isOwned ? <span class="chip chip--owned">Yours</span> : null}
+                {this.category ? (
+                  <span class="chip chip--category">{this.category}</span>
+                ) : null}
+                {this.area ? (
+                  <span class="chip chip--area">{this.area}</span>
+                ) : null}
+                {this.isOwned ? (
+                  <span class="chip chip--owned">Yours</span>
+                ) : null}
               </span>
             </span>
           </button>
 
           <button
             type="button"
-            class={{ fav: true, 'fav--active': this.isFavorite }}
+            class={{ fav: true, "fav--active": this.isFavorite }}
             onClick={this.handleFavorite}
-            aria-pressed={this.isFavorite ? 'true' : 'false'}
+            aria-pressed={this.isFavorite ? "true" : "false"}
             aria-label={
               this.isFavorite
                 ? `Remove ${this.name} from favorites`

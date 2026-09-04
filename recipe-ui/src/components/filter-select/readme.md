@@ -1,9 +1,6 @@
 # filter-select
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -16,13 +13,11 @@
 | `searchable`  | `searchable`   |             | `boolean` | `true`                     |
 | `value`       | `value`        |             | `string`  | `''`                       |
 
-
 ## Events
 
 | Event           | Description | Type                              |
 | --------------- | ----------- | --------------------------------- |
 | `filter-change` |             | `CustomEvent<FilterChangeDetail>` |
-
 
 ## Slots
 
@@ -30,7 +25,6 @@
 | --------- | ----------- |
 | `"empty"` |             |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

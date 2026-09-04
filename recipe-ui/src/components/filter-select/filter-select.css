@@ -1,4 +1,4 @@
-@import '../../global/library.css';
+@import "../../global/library.css";
 
 :host {
   display: inline-flex;

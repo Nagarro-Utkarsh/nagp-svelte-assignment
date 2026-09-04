@@ -1,9 +1,6 @@
 # confirm-dialog
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -15,7 +12,6 @@
 | `open`         | `open`          |             | `boolean`               | `false`           |
 | `tone`         | `tone`          |             | `"danger" \| "default"` | `'default'`       |
 
-
 ## Events
 
 | Event            | Description | Type                |
@@ -23,14 +19,12 @@
 | `dialog-cancel`  |             | `CustomEvent<void>` |
 | `dialog-confirm` |             | `CustomEvent<void>` |
 
-
 ## Slots
 
 | Slot | Description      |
 | ---- | ---------------- |
 |      | The default slot |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

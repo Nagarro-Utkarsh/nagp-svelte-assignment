@@ -1,26 +1,26 @@
-import adapter from '@sveltejs/adapter-vercel';
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import adapter from "@sveltejs/adapter-vercel";
+import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-	plugins: [
-		sveltekit({
-			compilerOptions: {
-				runes: ({ filename }) =>
-					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
-			},
-			adapter: adapter()
-		})
-	],
-	resolve: {
-		preserveSymlinks: false
-	},
-	optimizeDeps: {
-		exclude: ['@utkarsh-mahajan/recipe-ui']
-	},
-	server: {
-		fs: {
-			allow: ['..']
-		}
-	}
+  plugins: [
+    sveltekit({
+      compilerOptions: {
+        runes: ({ filename }) =>
+          filename.split(/[/\\]/).includes("node_modules") ? undefined : true,
+      },
+      adapter: adapter(),
+    }),
+  ],
+  resolve: {
+    preserveSymlinks: false,
+  },
+  optimizeDeps: {
+    exclude: ["@utkarsh-mahajan/recipe-ui"],
+  },
+  server: {
+    fs: {
+      allow: [".."],
+    },
+  },
 });

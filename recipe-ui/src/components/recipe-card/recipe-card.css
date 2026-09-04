@@ -1,4 +1,4 @@
-@import '../../global/library.css';
+@import "../../global/library.css";
 
 .card {
   position: relative;
@@ -11,7 +11,9 @@
   border: 1px solid var(--rf-border, #e4e6ea);
   border-radius: var(--rf-radius-lg, 0.75rem);
   box-shadow: var(--rf-shadow, 0 1px 2px rgb(16 24 40 / 6%));
-  transition: box-shadow 150ms ease, transform 150ms ease;
+  transition:
+    box-shadow 150ms ease,
+    transform 150ms ease;
 }
 
 .card:hover {
@@ -112,7 +114,9 @@
   background: rgb(0 0 0 / 35%);
   border-radius: 999px;
   backdrop-filter: blur(2px);
-  transition: color 120ms ease, background-color 120ms ease;
+  transition:
+    color 120ms ease,
+    background-color 120ms ease;
 }
 
 .fav svg {
@@ -143,6 +147,6 @@
   padding: 0 0.875rem 0.875rem;
 }
 
-:host(:not(:has([slot='actions']))) .actions {
+:host(:not(:has([slot="actions"]))) .actions {
   display: none;
 }

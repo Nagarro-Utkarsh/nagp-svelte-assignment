@@ -3,16 +3,8 @@
     "id": 715420,
     "title": "Barbecue Chicken Cauliflower Couscous Bowls",
     "image": "https://img.spoonacular.com/recipes/715420-312x231.jpg",
-    "cuisines": [
-      "bbq",
-      "Barbecue"
-    ],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "cuisines": ["bbq", "Barbecue"],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -154,16 +146,8 @@
     "title": "Breaded Shrimp and Spicy Mayo Appetizer",
     "image": "https://img.spoonacular.com/recipes/716297-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "dairy free",
-      "pescatarian"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
+    "diets": ["dairy free", "pescatarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -259,16 +243,8 @@
     "title": "Brown Butter Twice Baked Sweet Potatoes",
     "image": "https://img.spoonacular.com/recipes/715544-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "gluten free",
-      "primal"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
+    "diets": ["gluten free", "primal"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -381,9 +357,7 @@
       "hor d'oeuvre",
       "spread"
     ],
-    "diets": [
-      "ketogenic"
-    ],
+    "diets": ["ketogenic"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -455,13 +429,8 @@
     "title": "Cannoli Cream-Filled Strawberries",
     "image": "https://img.spoonacular.com/recipes/716409-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "gluten free",
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["dessert"],
+    "diets": ["gluten free", "lacto ovo vegetarian"],
     "extendedIngredients": [
       {
         "nameClean": "cream cheese",
@@ -512,13 +481,8 @@
     "title": "Cannoli Ice Cream w. Pistachios & Dark Chocolate",
     "image": "https://img.spoonacular.com/recipes/716410-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "gluten free",
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["dessert"],
+    "diets": ["gluten free", "lacto ovo vegetarian"],
     "extendedIngredients": [
       {
         "nameClean": "chocolate",
@@ -640,10 +604,7 @@
     "id": 716426,
     "title": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
     "image": "https://img.spoonacular.com/recipes/716426-312x231.jpg",
-    "cuisines": [
-      "Chinese",
-      "Asian"
-    ],
+    "cuisines": ["Chinese", "Asian"],
     "dishTypes": [
       "side dish",
       "antipasti",
@@ -653,11 +614,7 @@
       "antipasto",
       "hor d'oeuvre"
     ],
-    "diets": [
-      "dairy free",
-      "lacto ovo vegetarian",
-      "vegan"
-    ],
+    "diets": ["dairy free", "lacto ovo vegetarian", "vegan"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -777,15 +734,8 @@
     "title": "Charred Onion Dip w. Steamed Red Potatoes for Dipping",
     "image": "https://img.spoonacular.com/recipes/716425-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "condiment",
-      "dip",
-      "spread"
-    ],
-    "diets": [
-      "gluten free",
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["condiment", "dip", "spread"],
+    "diets": ["gluten free", "lacto ovo vegetarian"],
     "extendedIngredients": [
       {
         "nameClean": "chives",
@@ -854,13 +804,7 @@
     "title": "Cheesy Chicken and Rice Casserole",
     "image": "https://img.spoonacular.com/recipes/715397-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -950,16 +894,8 @@
     "id": 715421,
     "title": "Cheesy Chicken Enchilada Quinoa Casserole",
     "image": "https://img.spoonacular.com/recipes/715421-312x231.jpg",
-    "cuisines": [
-      "Mexican"
-    ],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "cuisines": ["Mexican"],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -1082,16 +1018,8 @@
     "id": 715394,
     "title": "Chicken Enchilada Casserole",
     "image": "https://img.spoonacular.com/recipes/715394-312x231.jpg",
-    "cuisines": [
-      "Mexican"
-    ],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "cuisines": ["Mexican"],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -1176,12 +1104,7 @@
     "title": "Chorizo and Beef Quinoa Stuffed Pepper",
     "image": "https://img.spoonacular.com/recipes/715523-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -1271,20 +1194,9 @@
     "id": 639637,
     "title": "Classic scones",
     "image": "https://img.spoonacular.com/recipes/639637-312x231.jpg",
-    "cuisines": [
-      "English",
-      "British",
-      "Scottish",
-      "European"
-    ],
-    "dishTypes": [
-      "morning meal",
-      "brunch",
-      "breakfast"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "cuisines": ["English", "British", "Scottish", "European"],
+    "dishTypes": ["morning meal", "brunch", "breakfast"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1329,14 +1241,8 @@
     "title": "Crab Cakes Eggs Benedict",
     "image": "https://img.spoonacular.com/recipes/640275-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "morning meal",
-      "brunch",
-      "breakfast"
-    ],
-    "diets": [
-      "pescatarian"
-    ],
+    "dishTypes": ["morning meal", "brunch", "breakfast"],
+    "diets": ["pescatarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1445,12 +1351,8 @@
     "title": "Creamy Lime Pie Square Bites",
     "image": "https://img.spoonacular.com/recipes/715381-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["dessert"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1551,18 +1453,9 @@
     "id": 735820,
     "title": "Crock-Pot: Asian-Style Country Ribs with Black Bean Garlic Sauce",
     "image": "https://img.spoonacular.com/recipes/735820-312x231.jpg",
-    "cuisines": [
-      "Asian"
-    ],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "ketogenic"
-    ],
+    "cuisines": ["Asian"],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
+    "diets": ["ketogenic"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1694,12 +1587,7 @@
       "antipasto",
       "hor d'oeuvre"
     ],
-    "diets": [
-      "gluten free",
-      "dairy free",
-      "lacto ovo vegetarian",
-      "vegan"
-    ],
+    "diets": ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1823,12 +1711,8 @@
     "title": "Delicious Triple Chocolate Bundt Cake",
     "image": "https://img.spoonacular.com/recipes/715452-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["dessert"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1882,14 +1766,8 @@
     "title": "Easy Homemade Apple Fritters",
     "image": "https://img.spoonacular.com/recipes/775666-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "morning meal",
-      "brunch",
-      "breakfast"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["morning meal", "brunch", "breakfast"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -1979,19 +1857,8 @@
     "title": "Easy Homemade Rice and Beans",
     "image": "https://img.spoonacular.com/recipes/716627-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "gluten free",
-      "dairy free",
-      "lacto ovo vegetarian",
-      "vegan"
-    ],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
+    "diets": ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -2078,16 +1945,8 @@
     "title": "Easy Slow Cooker Chicken Tortilla Soup",
     "image": "https://img.spoonacular.com/recipes/715392-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "soup",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "dairy free"
-    ],
+    "dishTypes": ["lunch", "soup", "main course", "main dish", "dinner"],
+    "diets": ["dairy free"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -2162,17 +2021,8 @@
     "title": "Finger Foods: Frittata Muffins",
     "image": "https://img.spoonacular.com/recipes/716432-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "morning meal",
-      "brunch",
-      "breakfast"
-    ],
-    "diets": [
-      "gluten free",
-      "lacto ovo vegetarian",
-      "primal",
-      "ketogenic"
-    ],
+    "dishTypes": ["morning meal", "brunch", "breakfast"],
+    "diets": ["gluten free", "lacto ovo vegetarian", "primal", "ketogenic"],
     "extendedIngredients": [
       {
         "nameClean": "broccoli",
@@ -2228,21 +2078,9 @@
     "id": 716408,
     "title": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
     "image": "https://img.spoonacular.com/recipes/716408-312x231.jpg",
-    "cuisines": [
-      "Mediterranean",
-      "European",
-      "Greek"
-    ],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "gluten free",
-      "pescatarian"
-    ],
+    "cuisines": ["Mediterranean", "European", "Greek"],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
+    "diets": ["gluten free", "pescatarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -2341,13 +2179,8 @@
     "title": "Grilled Zucchini with Goat Cheese and Balsamic-Honey Syrup",
     "image": "https://img.spoonacular.com/recipes/716423-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "side dish"
-    ],
-    "diets": [
-      "gluten free",
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["side dish"],
+    "diets": ["gluten free", "lacto ovo vegetarian"],
     "extendedIngredients": [
       {
         "nameClean": "balsamic vinegar",
@@ -2398,13 +2231,7 @@
     "title": "Homemade King Ranch Chicken Casserole",
     "image": "https://img.spoonacular.com/recipes/715437-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -2561,16 +2388,8 @@
     "id": 715545,
     "title": "How to Make the Best Chicken Jambalaya",
     "image": "https://img.spoonacular.com/recipes/715545-312x231.jpg",
-    "cuisines": [
-      "Cajun",
-      "Creole"
-    ],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "cuisines": ["Cajun", "Creole"],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -2732,19 +2551,9 @@
     "id": 715595,
     "title": "How to Make the Cheesiest Bowtie Mac and Cheese",
     "image": "https://img.spoonacular.com/recipes/715595-312x231.jpg",
-    "cuisines": [
-      "American"
-    ],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "cuisines": ["American"],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -2819,13 +2628,7 @@
     "title": "Loaded Baked Potato Soup",
     "image": "https://img.spoonacular.com/recipes/715562-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "soup",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["lunch", "soup", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -2913,14 +2716,8 @@
     "title": "Old Fashioned Vanilla Buttercream Frosting",
     "image": "https://img.spoonacular.com/recipes/715550-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "frosting",
-      "icing"
-    ],
-    "diets": [
-      "gluten free",
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["frosting", "icing"],
+    "diets": ["gluten free", "lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -2989,9 +2786,7 @@
     "title": "OREO Cookie Balls – Snowman",
     "image": "https://img.spoonacular.com/recipes/715439-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
+    "dishTypes": ["dessert"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -3098,18 +2893,8 @@
     "title": "Peri Peri Chicken and Savoury Rice",
     "image": "https://img.spoonacular.com/recipes/716296-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "gluten free",
-      "dairy free",
-      "whole 30",
-      "ketogenic"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
+    "diets": ["gluten free", "dairy free", "whole 30", "ketogenic"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -3244,12 +3029,8 @@
     "title": "Pink Lemonade Crinkle Cookies",
     "image": "https://img.spoonacular.com/recipes/715541-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["dessert"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -3369,16 +3150,8 @@
     "title": "Red Lentil Soup with Chicken and Turnips",
     "image": "https://img.spoonacular.com/recipes/715415-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "soup",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "dairy free"
-    ],
+    "dishTypes": ["lunch", "soup", "main course", "main dish", "dinner"],
+    "diets": ["dairy free"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -3494,10 +3267,7 @@
       "main dish",
       "dinner"
     ],
-    "diets": [
-      "gluten free",
-      "primal"
-    ],
+    "diets": ["gluten free", "primal"],
     "extendedIngredients": [
       {
         "nameClean": "bacon",
@@ -3571,11 +3341,7 @@
     "id": 716412,
     "title": "Roasted Cranberries, Ricotta & Honey Crostini",
     "image": "https://img.spoonacular.com/recipes/716412-312x231.jpg",
-    "cuisines": [
-      "Mediterranean",
-      "Italian",
-      "European"
-    ],
+    "cuisines": ["Mediterranean", "Italian", "European"],
     "dishTypes": [
       "fingerfood",
       "antipasti",
@@ -3585,9 +3351,7 @@
       "antipasto",
       "hor d'oeuvre"
     ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "diets": ["lacto ovo vegetarian"],
     "extendedIngredients": [
       {
         "nameClean": "peasant bread",
@@ -3638,12 +3402,7 @@
     "title": "Sausage & Pepperoni Stromboli",
     "image": "https://img.spoonacular.com/recipes/776505-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -3743,16 +3502,8 @@
     "title": "Shrimp and Asparagus Foil Packs with Garlic Lemon Butter Sauce",
     "image": "https://img.spoonacular.com/recipes/997285-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "primal",
-      "pescatarian"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
+    "diets": ["primal", "pescatarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -3841,20 +3592,9 @@
     "id": 715391,
     "title": "Slow Cooker Chicken Taco Soup",
     "image": "https://img.spoonacular.com/recipes/715391-312x231.jpg",
-    "cuisines": [
-      "Mexican"
-    ],
-    "dishTypes": [
-      "lunch",
-      "soup",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "gluten free",
-      "dairy free"
-    ],
+    "cuisines": ["Mexican"],
+    "dishTypes": ["lunch", "soup", "main course", "main dish", "dinner"],
+    "diets": ["gluten free", "dairy free"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -3914,13 +3654,7 @@
     "title": "Slow Cooker Red Beans and Rice",
     "image": "https://img.spoonacular.com/recipes/715493-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "side dish",
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["side dish", "lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -4007,9 +3741,7 @@
     "id": 715419,
     "title": "Slow Cooker Spicy Hot Wings",
     "image": "https://img.spoonacular.com/recipes/715419-312x231.jpg",
-    "cuisines": [
-      "American"
-    ],
+    "cuisines": ["American"],
     "dishTypes": [
       "lunch",
       "antipasti",
@@ -4022,10 +3754,7 @@
       "dinner",
       "hor d'oeuvre"
     ],
-    "diets": [
-      "gluten free",
-      "dairy free"
-    ],
+    "diets": ["gluten free", "dairy free"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -4084,15 +3813,9 @@
     "id": 715515,
     "title": "Southern Style Green Bean",
     "image": "https://img.spoonacular.com/recipes/715515-312x231.jpg",
-    "cuisines": [
-      "Southern"
-    ],
-    "dishTypes": [
-      "side dish"
-    ],
-    "diets": [
-      "gluten free"
-    ],
+    "cuisines": ["Southern"],
+    "dishTypes": ["side dish"],
+    "diets": ["gluten free"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -4160,15 +3883,9 @@
     "id": 715378,
     "title": "Strawberry and Nutella Cobbler",
     "image": "https://img.spoonacular.com/recipes/715378-312x231.jpg",
-    "cuisines": [
-      "Southern"
-    ],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "cuisines": ["Southern"],
+    "dishTypes": ["dessert"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -4275,20 +3992,9 @@
     "id": 715569,
     "title": "Strawberry Cheesecake Chocolate Crepes",
     "image": "https://img.spoonacular.com/recipes/715569-312x231.jpg",
-    "cuisines": [
-      "Mediterranean",
-      "French",
-      "European"
-    ],
-    "dishTypes": [
-      "morning meal",
-      "dessert",
-      "brunch",
-      "breakfast"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "cuisines": ["Mediterranean", "French", "European"],
+    "dishTypes": ["morning meal", "dessert", "brunch", "breakfast"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -4429,12 +4135,7 @@
     "title": "Turkey Pot Pie",
     "image": "https://img.spoonacular.com/recipes/715467-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
+    "dishTypes": ["lunch", "main course", "main dish", "dinner"],
     "diets": [],
     "analyzedInstructions": [
       {
@@ -4586,12 +4287,8 @@
     "title": "Ultimate Chocolate Chunk Cookies",
     "image": "https://img.spoonacular.com/recipes/715483-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "dessert"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["dessert"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -4674,17 +4371,9 @@
     "id": 716217,
     "title": "Vietnamese Pancakes with Vegetables, Herbs and a Fragrant Dipping Sauce (Bánh Xèo)",
     "image": "https://img.spoonacular.com/recipes/716217-312x231.jpg",
-    "cuisines": [
-      "Vietnamese",
-      "Asian"
-    ],
-    "dishTypes": [
-      "side dish"
-    ],
-    "diets": [
-      "dairy free",
-      "lacto ovo vegetarian"
-    ],
+    "cuisines": ["Vietnamese", "Asian"],
+    "dishTypes": ["side dish"],
+    "diets": ["dairy free", "lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [
@@ -4882,14 +4571,8 @@
     "title": "Watching What I Eat: Peanut Butter Banana Oat Breakfast Cookies with Carob / Chocolate Chips",
     "image": "https://img.spoonacular.com/recipes/945221-312x231.jpg",
     "cuisines": [],
-    "dishTypes": [
-      "morning meal",
-      "brunch",
-      "breakfast"
-    ],
-    "diets": [
-      "lacto ovo vegetarian"
-    ],
+    "dishTypes": ["morning meal", "brunch", "breakfast"],
+    "diets": ["lacto ovo vegetarian"],
     "analyzedInstructions": [
       {
         "steps": [

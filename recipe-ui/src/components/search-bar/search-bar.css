@@ -1,4 +1,4 @@
-@import '../../global/library.css';
+@import "../../global/library.css";
 
 .bar {
   display: flex;
@@ -93,7 +93,7 @@
   margin-top: 0.625rem;
 }
 
-:host(:not(:has([slot='filters']))) .filters {
+:host(:not(:has([slot="filters"]))) .filters {
   display: none;
 }
 

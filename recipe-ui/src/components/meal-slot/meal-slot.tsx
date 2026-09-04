@@ -1,9 +1,9 @@
-import { Component, Event, EventEmitter, Host, Prop, h } from '@stencil/core';
-import type { SlotAddDetail } from './meal-slot.types';
+import { Component, Event, EventEmitter, Host, Prop, h } from "@stencil/core";
+import type { SlotAddDetail } from "./meal-slot.types";
 
 @Component({
-  tag: 'meal-slot',
-  styleUrl: 'meal-slot.css',
+  tag: "meal-slot",
+  styleUrl: "meal-slot.css",
   shadow: true,
 })
 export class MealSlot {
@@ -13,9 +13,9 @@ export class MealSlot {
 
   @Prop() isEmpty = false;
 
-  @Prop() addLabel = 'Add meal';
+  @Prop() addLabel = "Add meal";
 
-  @Event({ eventName: 'slot-add' }) slotAdd!: EventEmitter<SlotAddDetail>;
+  @Event({ eventName: "slot-add" }) slotAdd!: EventEmitter<SlotAddDetail>;
 
   private handleAdd = () => {
     this.slotAdd.emit({ day: this.day, slotLabel: this.slotLabel });

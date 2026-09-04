@@ -1,9 +1,6 @@
 # search-bar
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -13,7 +10,6 @@
 | `placeholder` | `placeholder` |             | `string` | `'Search recipes…'` |
 | `value`       | `value`       |             | `string` | `''`                |
 
-
 ## Events
 
 | Event           | Description | Type                              |
@@ -22,14 +18,12 @@
 | `search-input`  |             | `CustomEvent<SearchInputDetail>`  |
 | `search-submit` |             | `CustomEvent<SearchSubmitDetail>` |
 
-
 ## Slots
 
 | Slot        | Description |
 | ----------- | ----------- |
 | `"filters"` |             |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

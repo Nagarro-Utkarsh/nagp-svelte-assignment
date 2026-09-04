@@ -1,9 +1,6 @@
 # recipe-card
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -17,7 +14,6 @@
 | `name` _(required)_     | `name`        |             | `string`              | `undefined` |
 | `recipeId` _(required)_ | `recipe-id`   |             | `string`              | `undefined` |
 
-
 ## Events
 
 | Event             | Description | Type                                |
@@ -25,14 +21,12 @@
 | `card-open`       |             | `CustomEvent<CardOpenDetail>`       |
 | `favorite-toggle` |             | `CustomEvent<FavoriteToggleDetail>` |
 
-
 ## Slots
 
 | Slot        | Description |
 | ----------- | ----------- |
 | `"actions"` |             |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

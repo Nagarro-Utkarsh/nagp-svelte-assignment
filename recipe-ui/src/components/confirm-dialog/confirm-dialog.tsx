@@ -1,29 +1,37 @@
-import { Component, Event, EventEmitter, Host, Prop, Watch, h } from '@stencil/core';
-import type { ConfirmDialogTone } from './confirm-dialog.types';
+import {
+  Component,
+  Event,
+  EventEmitter,
+  Host,
+  Prop,
+  Watch,
+  h,
+} from "@stencil/core";
+import type { ConfirmDialogTone } from "./confirm-dialog.types";
 
 @Component({
-  tag: 'confirm-dialog',
-  styleUrl: 'confirm-dialog.css',
+  tag: "confirm-dialog",
+  styleUrl: "confirm-dialog.css",
   shadow: true,
 })
 export class ConfirmDialog {
   @Prop() open = false;
 
-  @Prop() heading = 'Are you sure?';
+  @Prop() heading = "Are you sure?";
 
-  @Prop() confirmLabel = 'Confirm';
+  @Prop() confirmLabel = "Confirm";
 
-  @Prop() cancelLabel = 'Cancel';
+  @Prop() cancelLabel = "Cancel";
 
-  @Prop() tone: ConfirmDialogTone = 'default';
+  @Prop() tone: ConfirmDialogTone = "default";
 
-  @Event({ eventName: 'dialog-confirm' }) dialogConfirm!: EventEmitter<void>;
+  @Event({ eventName: "dialog-confirm" }) dialogConfirm!: EventEmitter<void>;
 
-  @Event({ eventName: 'dialog-cancel' }) dialogCancel!: EventEmitter<void>;
+  @Event({ eventName: "dialog-cancel" }) dialogCancel!: EventEmitter<void>;
 
   private dialog?: HTMLDialogElement;
 
-  @Watch('open')
+  @Watch("open")
   syncOpen(open: boolean) {
     this.toggleDialog(open);
   }
@@ -60,12 +68,12 @@ export class ConfirmDialog {
       <Host>
         <dialog
           class="backdrop"
-          ref={el => (this.dialog = el as HTMLDialogElement)}
+          ref={(el) => (this.dialog = el as HTMLDialogElement)}
           onCancel={this.handleCancel}
           onClick={this.handleBackdropClick}
           aria-label={this.heading}
         >
-          <div class={{ panel: true, 'panel--danger': this.tone === 'danger' }}>
+          <div class={{ panel: true, "panel--danger": this.tone === "danger" }}>
             <h2 class="heading">{this.heading}</h2>
 
             <div class="body">
@@ -73,10 +81,18 @@ export class ConfirmDialog {
             </div>
 
             <footer class="foot">
-              <button type="button" class="cancel" onClick={() => this.dialogCancel.emit()}>
+              <button
+                type="button"
+                class="cancel"
+                onClick={() => this.dialogCancel.emit()}
+              >
                 {this.cancelLabel}
               </button>
-              <button type="button" class="confirm" onClick={() => this.dialogConfirm.emit()}>
+              <button
+                type="button"
+                class="confirm"
+                onClick={() => this.dialogConfirm.emit()}
+              >
                 {this.confirmLabel}
               </button>
             </footer>
