@@ -19,15 +19,6 @@ there is nothing to call:
 import '@utkarsh-mahajan/recipe-ui/components/recipe-card';
 ```
 
-Registration is idempotent and bundlers dedupe the module, so importing the same component from several
-files costs nothing and each route only pulls in what it uses. There is no barrel export — the package
-root is the shared runtime and the event-payload types, not a re-export of the components, so
-`import '@utkarsh-mahajan/recipe-ui'` registers nothing.
-
-No `browser` guard is needed. The modules reach `HTMLElement` through a `typeof window` check and
-self-register behind a `typeof customElements` check, so they are safe during SSR, which renders the
-un-upgraded tags and lets them upgrade on hydration.
-
 The package builds only Stencil's `dist-custom-elements` target, which the Stencil docs recommend for
 consumers that already run a bundler. The components share one runtime chunk through static imports and
 never fetch anything at runtime, so a bundler code-splits them like any other dependency and
@@ -43,8 +34,6 @@ registration happens synchronously at module evaluation.
 | `<meal-slot>` | one slot of a meal plan, holding cards passed in from the light DOM |
 | `<confirm-dialog>` | modal built on native `<dialog>`, for confirmations and short forms |
 
-All props are primitives, so they work as plain attributes no matter when the element upgrades.
-Attribute names are the kebab-case form of the prop. Richer content goes through slots.
 
 ### `<recipe-card>`
 
@@ -98,11 +87,6 @@ Set `searchable="false"` to drop the type-ahead box, for lists short enough to j
 handling is unaffected: arrow keys move the active option, Enter selects, Escape closes, clicking
 outside closes. Slot: `empty` — the message shown when the type-ahead matches nothing.
 
-The host is `inline-flex` and sizes to its content, but the trigger fills whatever width the host is
-given — so `filter-select { display: flex }` from the light DOM stretches it across a form row. To line
-several rows up, set `--rf-filter-label-width` to reserve a fixed label column; without it the label is
-as wide as its text and the triggers start at different offsets.
-
 ### `<meal-slot>`
 
 | Attribute | Type | Default |
@@ -133,14 +117,10 @@ Built on the native `<dialog>` via `showModal()`, so focus trapping and Escape c
 Escape and backdrop clicks emit `dialog-cancel` rather than closing, keeping `open` the single source
 of truth.
 
-The dialog sets `overflow: visible`, overriding the `overflow: auto` in the UA stylesheet, so a
-`filter-select` in the default slot can open its dropdown past the dialog's edge instead of being
-clipped. The trade is that the dialog does not scroll — it is meant for short content.
 
 ## Theming
 
-Shadow DOM blocks selector matching but not inheritance, so **values** reach inside the components
-while **rules** do not. Set these on `:root` and they apply everywhere:
+Set these on `:root` and they apply everywhere:
 
 | Token | Fallback |
 | --- | --- |
@@ -161,18 +141,22 @@ while **rules** do not. Set these on `:root` and they apply everywhere:
 
 ## TypeScript
 
-Event payload types are exported from the package root:
+The bare import (`@utkarsh-mahajan/recipe-ui`) is **types-only** — it has no runtime module. Use it to
+import event detail types and prop types. Component registration is always a per-component side-effect
+import (see [Usage](#usage)).
+
+| Type | Component | Event / Prop |
+| --- | --- | --- |
+| `FavoriteToggleDetail` | `<recipe-card>` | `favorite-toggle` event detail |
+| `CardOpenDetail` | `<recipe-card>` | `card-open` event detail |
+| `SearchInputDetail` | `<search-bar>` | `search-input` event detail |
+| `SearchSubmitDetail` | `<search-bar>` | `search-submit` event detail |
+| `FilterChangeDetail` | `<filter-select>` | `filter-change` event detail |
+| `SlotAddDetail` | `<meal-slot>` | `slot-add` event detail |
+| `ConfirmDialogTone` | `<confirm-dialog>` | `tone` prop type |
 
 ```ts
-import type {
-	FavoriteToggleDetail,
-	CardOpenDetail,
-	SearchInputDetail,
-	SearchSubmitDetail,
-	FilterChangeDetail,
-	SlotAddDetail,
-	ConfirmDialogTone
-} from '@utkarsh-mahajan/recipe-ui';
+import type { FavoriteToggleDetail, CardOpenDetail } from '@utkarsh-mahajan/recipe-ui';
 ```
 
 ## Development
@@ -188,25 +172,3 @@ To try a change in the app before publishing, link the local build:
 ```bash
 npm link          # then: cd ../recipe-planner-web-app && npm link @utkarsh-mahajan/recipe-ui
 ```
-
-
-
-## Publishing
-
-```bash
-npm pack --dry-run                  # confirm what ships
-npx @arethetypeswrong/cli --pack    # confirm every exports condition resolves
-npm publish
-```
-
-`files` is `["dist/"]`, so only the build output and this README ship. `publishConfig.access` is
-`public`, which scoped packages need in order to publish at all.
-
-Versioning is semver via `npm version patch|minor|major`. Changing or removing an attribute, event
-or CSS custom property is a breaking change and gets a major bump; adding one is a minor bump;
-internal styling and markup fixes get a patch. Published versions are immutable, so every change
-ships as a new version and the app moves to it.
-
-## License
-
-MIT

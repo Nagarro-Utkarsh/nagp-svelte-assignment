@@ -11,12 +11,10 @@
     "svelte"
   ],
   "type": "module",
-  "module": "dist/components/index.js",
   "types": "dist/components/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/components/index.d.ts",
-      "import": "./dist/components/index.js"
+      "types": "./dist/components/index.d.ts"
     },
     "./components/*": {
       "types": "./dist/components/*.d.ts",
