@@ -53,7 +53,7 @@ async function fetchRecipes(): Promise<RawRecipeDetail[]> {
 
 	if (!results.length) throw new Error('Spoonacular returned no results');
 
-	return results;
+	return results.sort((a, b) => (a.title ?? '').localeCompare(b.title ?? ''));
 }
 
 async function getAllRecipes(): Promise<RawRecipeDetail[]> {

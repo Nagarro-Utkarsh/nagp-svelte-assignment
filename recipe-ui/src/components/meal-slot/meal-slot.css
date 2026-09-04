@@ -36,7 +36,7 @@
   color: var(--rf-accent, #d9480f);
   background: var(--rf-surface, #ffffff);
   border: 1px solid var(--rf-border, #e4e6ea);
-  border-radius: 999px;
+  border-radius: 50px;
 }
 
 .add svg {

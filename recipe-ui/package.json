@@ -1,6 +1,6 @@
 {
   "name": "@utkarsh-mahajan/recipe-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable web components for the Recipe Finder & Meal Planner app, built with StencilJS.",
   "license": "MIT",
   "keywords": [
